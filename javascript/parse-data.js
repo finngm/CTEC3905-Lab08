@@ -6,10 +6,12 @@
 
   /*
     EXERCISE 01:
-    Rewrite this to make it *loop* through all the lecturers' names. 
-    (Note the ES6 'template literal' syntax):
+    Rewrite this to make it *loop* through all the lecturers' names.
+	
+	Clue: use "for key in..." and try to work out the syntax
+    (Note the ES6 'template literal' syntax - you can add HTML tags)
   */
-  let theData =  `${obj.lecturers[1].firstName} ${obj.lecturers[1].lastName}`;
+  let theData = `${obj.lecturers[1].firstName} ${obj.lecturers[1].lastName}`;
   
   // populates the chosen element's content with the data:
   demoData.innerHTML = theData; 
