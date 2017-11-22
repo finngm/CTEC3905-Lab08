@@ -11,7 +11,11 @@
 	Clue: use "for key in..." and try to work out the syntax
     (Note the ES6 'template literal' syntax - you can add HTML tags)
   */
-  let theData = `${obj.lecturers[1].firstName} ${obj.lecturers[1].lastName}`;
+  let theData = "";
+  
+  for (key in obj.lecturers) {
+    theData += `<li>${obj.lecturers[key].firstName} ${obj.lecturers[key].lastName}</li>`;
+  }
   
   // populates the chosen element's content with the data:
   demoData.innerHTML = theData; 
