@@ -1,0 +1,25 @@
+body {
+	margin: 0;
+}
+
+.demoList {
+	margin: 0;
+	list-style: none;
+	
+	background: #ed7e3d;
+	
+	display: flex;
+	//flex-direction: column;
+	padding: 0;
+}
+
+.demoList a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 1em;
+}
+
+.demoList a:hover {
+	background: skyblue;
+}
