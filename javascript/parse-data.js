@@ -14,7 +14,7 @@
   let theData = "";
   
   for (key in obj.lecturers) {
-    theData += `<li>${obj.lecturers[key].firstName} ${obj.lecturers[key].lastName}</li>`;
+    theData += `<li><a href="${obj.lecturers[key].link}">${obj.lecturers[key].firstName} ${obj.lecturers[key].lastName}</a></li>`;
   }
   
   // populates the chosen element's content with the data:
